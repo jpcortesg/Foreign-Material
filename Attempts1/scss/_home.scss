@@ -1,0 +1,16 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 40vh;
+  width: 80vw;
+  background: 
+  linear-gradient(
+    to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url('../img/firstCar.jpg') center;
+  background-size: cover;
+}

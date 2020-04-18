@@ -6,6 +6,7 @@ $typography: 'Roboto';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $typography;
 }
 
 @function set-text-color($color){
@@ -20,8 +21,14 @@ $typography: 'Roboto';
   transition: all 0.7s ease-in-out;
 }
 
-@mixin media-md{
-  @media screen and (max-width: 800px) {
+@mixin media-sm{
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xs{
+  @media screen and (max-width: 420px) {
     @content;
   }
 }
