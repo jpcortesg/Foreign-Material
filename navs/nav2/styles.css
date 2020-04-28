@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  list-style: none;
+}
+
+body {
+  background: 
+  linear-gradient(
+    to right, 
+    rgba(83,128,110, 0.3), 
+    rgba(83,128,110, 0.9)
+    ), 
+  url("fondo.jpg") center bottom;
+  /* background: 
+  linear-gradient(
+    to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url('../img/model-1.jpg') center top; */
+  background-size: cover;
+  height: 100vh;
+}
+
+nav{
+  width: 100vw;
+  height: 5rem;
+  background: rgba(34,34,34, 1)
+}
+
+label.logo{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: rgba(206,205,198, 1);
+  padding: 0 6.3rem;
+  line-height: 5rem;
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 0.5rem;
+  line-height: 5rem;
+}
+
+nav a{
+  color: rgba(206,205,198, 1);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0.07rem solid transparent;
+  padding: 0.5rem 0.63rem;
+  border-radius: 0.2rem;
+}
+
+a.active, a:hover{
+  color: rgba(241,241,236, 1);
+  background: rgba(121,116,112, 1);
+  border: 0.07rem solid;
+  transition: all 1s ease-in-out;
+}
+
+label.icon{
+  color:rgba(206,205,198, 1);
+  font-size: 1.88rem;
+  line-height: 5rem;
+  float: right;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 67rem){
+  label.logo{
+    font-size: 2rem;
+    padding: 3.75rem;
+  }
+
+  nav ul{
+    margin-right: 1.25rem;
+  }
+
+  nav a{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 50rem){
+  label.icon{
+    display: block;
+  }
+
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(66,66,66, 0.7);
+    top: 5rem;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .des{
+    left: -100%;
+  }
+
+  nav li {
+    display: block;
+    margin: 3.125rem 0;
+    line-height: 1.875rem;
+  }
+
+  nav a{
+    font-size: 1.25rem;
+  }
+
+  a.active, a:hover{
+    border: none;
+    color: rgba(255,255,255, 1);
+    background: rgba(66,66,66, 1);
+  }
+}
