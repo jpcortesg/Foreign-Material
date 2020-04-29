@@ -1,0 +1,193 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+body{
+  background: 
+  linear-gradient(to right,
+    rgba(15,15,15, 0.3),
+    rgba(15,15,15, 0.7)
+  ),
+  url('./Fondo.jpg') center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav{
+  background: rgba(15,15,13, 1);
+  padding: 0.314rem 1.25rem;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: rgba(254,254,231, 1);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.menu li{
+  font-size: 1rem;
+  padding: 0.938rem 0.313rem;
+}
+
+.menu li a{
+  display: block;
+}
+
+.logo a{
+  font-size: 1.25rem;
+}
+
+.button.secondary{
+  border-bottom: 1px rgba(154,156,159, 1) solid;
+}
+
+/* Mobile Menu */
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle{
+  order: 1;
+}
+
+.item.button{
+  order: 2;
+}
+
+.item{
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.item.active{
+  display: block;
+}
+
+.toggle{
+  /* background: #FFF; */
+  cursor: pointer;
+}
+
+.bars{
+  background: rgba(154,156,159, 1);
+  display: inline-block;
+  position: relative;
+  height: 0.125rem;
+  width: 1.125rem; 
+}
+
+.bars::before, .bars::after{
+  content: '';
+  background: rgba(154,156,159, 1);
+  display: inline-block;
+  height: 0.125rem;
+  position: absolute;
+  width: 1.125rem; 
+}
+
+.bars::before{
+  top: 0.313rem;
+  /* margin-top: 0.313rem; */
+}
+
+.bars::after{
+  bottom: 0.313rem;
+  /* margin-top: 0.626rem; */
+}
+
+/* Tablet Menu */
+@media all and (min-width:29.25rem){
+  .menu{
+    justify-content: center;
+  }
+
+  .logo{
+    flex: 1;
+  }
+
+  .item.button{
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle{
+    order: 2;
+  }
+
+  .button.secondary{
+    border: 0;
+  }
+
+  .button a{
+    text-decoration: none;
+    padding: 0.438rem 0.938rem;
+    background: rgba(114,196,185, 1);
+    border: 1px solid #006d6d;
+    border-radius: 50rem;
+  }
+
+  .button.secondary a{
+    background: transparent;
+  }
+
+  .button a:hover{
+    transition: all 0.5s;
+  }
+  
+  .button:not(.secondary) a:hover{
+    background: #006d6d;
+    border-color: #005959;
+  }
+
+  .button.secondary a:hover{
+    color: #ddd;
+  }
+}
+
+@media all and (min-width:48rem){
+  .item{
+    display: block;
+    width: auto;
+  }
+
+  .toggle{
+    display: none;
+  }
+  
+  .logo{
+    order: 0;
+  }
+
+  .item{
+    order: 1;
+  }
+
+  .button{
+    order: 2;
+  }
+
+  .menu li{
+    padding: 0.938rem 0.625;
+  }
+
+  .menu li.button{
+    padding-right: 0;
+  }
+}
