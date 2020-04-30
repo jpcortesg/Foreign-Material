@@ -1,0 +1,33 @@
+$primary-color: #242029;
+$secondary_color: #71C2AD;
+$tertiary-color: #E4E4E4;
+$quaternary-color: #3F3848;
+$opcional-color: #E76C5B;
+$typography: 'Roboto';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $typography;
+}
+
+@mixin transition-ease{
+  transition: all 1s ease-in-out;
+}
+
+@function set-text-color($color){
+  @if(lightness($color) > 40%){
+    @return #3F3848;
+  }@else{
+    @return #E4E4E4;
+  }
+}
+
+@function set-text-back($color){
+  @if(lightness($color) > 40%){
+    @return #242029;
+  }@else{
+    @return #71C2AD;
+  }
+}
