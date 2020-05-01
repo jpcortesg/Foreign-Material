@@ -1,0 +1,143 @@
+.nav{
+  overflow: hidden;
+  height: 4.7rem;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background: set-back-color($tertiary-color);
+  align-items: center;
+  justify-content: space-between;
+
+  &_logo{
+    display: flex;
+    justify-content: start;
+    line-height: 4.7rem;
+    height: 100%;
+    width: 50%;
+
+    &_tx{
+      position: relative;
+      color: set-text-color($primary-color);
+      margin-left: 4rem;
+      font-weight: 300;
+    }
+
+    &_txs{
+      margin-left: -0.125rem;
+      font-weight: 600;
+      color: set-back-color($primary-color)
+    }
+  }
+
+  &_items{
+    line-height: 4.7rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-right: 4rem;
+    overflow: hidden;
+
+    &_item{
+      display: flex;
+
+      &_link{
+        padding: 0 2rem;
+        text-align: center;
+        font-size: 1.3rem;
+        color: set-text-color($primary-color);
+        @include transition-ease;
+        font-weight: 300;
+        position: relative;
+        overflow: hidden;
+
+        &::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 0;
+          background: rgba($color: $primary-color, $alpha: 0.3);
+          top: 0;
+          @include transition-ease;
+        }
+
+        &:hover::after{
+          height: 200%;
+          border-radius: 0 0 3rem 3rem;
+          @include transition-ease;
+        }
+
+        &::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 0;
+          background: rgba($color: $secondary-color, $alpha: 0.3);
+          bottom: 0;
+          @include transition-ease;
+        }
+
+        &:hover::before{
+          height: 200%;
+          border-radius: 3rem 3rem 0 0;
+          @include transition-ease;
+        }
+      }
+    }
+  }
+
+  &_burger{
+    cursor: pointer;
+    line-height: 4.7rem;
+    height: 100%;
+    width: 7%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include transition-ease;
+
+    &_btn{
+      height: 0.188rem;
+      width: 1.875rem;
+      background: set-text-color($primary-color);
+      position: relative;
+      @include transition-ease;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.188rem;
+        background: set-text-color($primary-color);
+        bottom: 0.370rem;
+        @include transition-ease;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.188rem;
+        background: set-text-color($primary-color);
+        top: 0.370rem;
+        @include transition-ease;
+      }
+
+      &.active::before{
+        transform: rotate(405deg) translate(5px, 5px);
+      }
+
+      &.active::after{
+        transform: rotate(-405deg) translate(4px, -3px);
+      }
+
+      &.active{
+        background: transparent;
+      }
+    }
+  }
+}

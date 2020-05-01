@@ -1,0 +1,66 @@
+$primary-color: #242029;
+$secondary_color: #71C2AD;
+$tertiary-color: #E4E4E4;
+$quaternary-color: #3F3848;
+$opcional-color: #E76C5B;
+$typography: 'Open Sans';
+
+@mixin transition-ease{
+  transition: all 1s ease-in-out;
+}
+
+@mixin transition-ease2{
+  transition: all 1.5s ease-in-out;
+}
+
+@function set-text-color($color){
+  @if(lightness($color) > 40%){
+    @return #3F3848;
+  }@else{
+    @return #E4E4E4;
+  }
+}
+
+@function set-back-color($color){
+  @if(lightness($color) > 40%){
+    @return #242029;
+  }@else{
+    @return #71C2AD;
+  }
+}
+
+@mixin media-md{
+  @media screen and (max-width: 50rem) {
+    @content;
+  }
+}
+
+@mixin media-lg{
+  @media screen and (max-width: 64rem) {
+    @content;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $typography;
+}
+
+body{
+  background: set-text-color($primary-color);
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}
