@@ -1,0 +1,27 @@
+<!-- reference: https://www.youtube.com/watch?v=SN2k-fUKKos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Animation1</title>
+</head>
+<body>
+  <div class="container">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+  </div>
+  <svg>
+    <filter id="gooey">
+      <FeGaussianBlur in="sourceGraphic" stdDeviation="10"/>
+      <feColorMatrix values="
+      1 0 0 0 0
+      0 1 0 0 0
+      0 0 1 0 0
+      0 0 0 20 -10
+      "/>
+    </filter>
+  </svg>
+</body>
+</html>
