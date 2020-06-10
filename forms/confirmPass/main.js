@@ -1,4 +1,51 @@
 const pswrd_1 = document.querySelector('#pswrd_1');
 const pswrd_2 = document.querySelector('#pswrd_2');
 const errorText = document.querySelector('.error-text');
-const btn = document.querySelector('.Button');
+const showbtn = document.querySelector('.show');
+const btn = document.querySelector('button');
+
+function active(){
+  if(pswrd_1.value.length >= 6){
+    btn.removeAttribute("disabled", "");
+    btn.classList.add("active");
+    pswrd_2.removeAttribute("disabled", "");
+  }else{
+    btn.setAttribute("disabled", "");
+    btn.classList.remove("active");
+    pswrd_2.setAttribute("disabled", "");
+    pswrd_2.value = null;
+  }
+}
+
+btn.onclick = function(){
+  if(pswrd_1.value != pswrd_2.value){
+    errorText.style.display = 'block';
+    errorText.textContent = 'Confirm Password Not Match';
+    errorText.classList.remove('matched');
+  }else{
+    errorText.style.display = 'block';
+    errorText.textContent = 'Nice! Confirm Password Mathched';
+    errorText.classList.add('matched');
+  }
+}
+
+function active_2(){
+  if(pswrd_2.value != ''){
+    showbtn.style.display = 'block';
+    showbtn.onclick = function(){
+      if((pswrd_1.type == 'password') && (pswrd_2.type == 'password')){
+        pswrd_1.type = 'text';
+        pswrd_2.type = 'text';
+        this.textContentm = 'Hide';
+        this.classList.add('active')
+      }else{
+        pswrd_1.type = 'password';
+        pswrd_2.type = 'password';
+        this.textContentm = 'Hide';
+        this.classList.remove('active')
+      }
+    }
+  }else{
+    showbtn.style.display = 'none';
+  }
+}

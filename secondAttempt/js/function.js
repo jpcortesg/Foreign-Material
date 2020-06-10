@@ -12,3 +12,8 @@ function activeFun(){
     active = true;
   }
 }
+
+function toggleForm(){
+  var container = document.querySelector('.form_container');
+  container.classList.toggle('form_active');
+}

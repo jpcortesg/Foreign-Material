@@ -13,15 +13,15 @@
       HTML CSS & JavaScript
     </header>
     <form action="#">
-      <div class="error-text">Confirm Password Not Match</div>
+      <div class="error-text"></div>
       <div class="filed">
-        <input id="pswrd_1" type="password" placeholder="Enter Password">
+        <input onkeyup="active();" id="pswrd_1" type="password" placeholder="Enter Password">
       </div>
       <div class="filed">
-        <input id="pswrd_2" type="password" placeholder="Confirm Password">
+        <input onkeyup="active_2()" id="pswrd_2" disabled type="password" placeholder="Confirm Password">
         <div class="show">SHOW</div>
       </div>
-      <Button disabled>Check</Button>
+      <button disabled>Check</button>
     </form>
   </div>
 

@@ -44,7 +44,6 @@ section .container .user .imgBx{
 
 section .container .user .imgBx img{
   position: relative;
-  width: 400px;
   top: 0;
   left: 0;
   width: 100%;
@@ -121,36 +120,36 @@ section .container .singupBx{
   pointer-events: none;
 }
 
-section .active .singupBx{
-  pointer-events: initial;
-}
-
 section .container .singupBx .formBx{
   left: 100%;
-}
-
-section .active .singupBx .formBx{
-  left: 0;
 }
 
 section .container .singupBx .imgBx{
   left: -100%;
 }
 
-section .active .singupBx .imgBx{
-  left: 0;
-}
-
 section .container .singinBx .formBx{
   left: 0%;
 }
 
-section .active .singinBx .formBx{
-  left: 100%;
-}
-
 section .container .singinBx .imgBx{
   left: 0;
+}
+
+section .active .singupBx{
+  pointer-events: initial;
+}
+
+section .active .singupBx .formBx{
+  left: 0;
+}
+
+section .active .singupBx .imgBx{
+  left: 0;
+}
+
+section .active .singinBx .formBx{
+  left: 100%;
 }
 
 section .active .singinBx .imgBx{

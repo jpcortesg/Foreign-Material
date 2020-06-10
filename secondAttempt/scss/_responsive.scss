@@ -51,12 +51,31 @@
 
       &.active{
         transform: translateX(0);
+        z-index: 3;
       }
     }
 
     &_burger{
       margin-right: 5rem;
       display: flex;
+    }
+  }
+
+  .form{
+
+    &_container{
+      max-width: 400px;
+
+      &_user{
+
+        &_imgBx{
+          display: none;
+        }
+
+        &_formBX{
+          width: 100%;
+        }
+      }
     }
   }
 }
