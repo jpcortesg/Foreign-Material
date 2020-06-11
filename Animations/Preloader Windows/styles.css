@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: #0079D7;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .wrapper{
+  position: absolute;
+  top: -35px;
+  /* transform: scale(1.5); */
+  left: 49%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.loader{
+  /* background: red; */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation: rotate 3.5s linear infinite;
+}
+
+.loader:nth-child(1){
+  animation-delay: 0.15s;
+}
+
+.loader:nth-child(2){
+  animation-delay: 0.3s;
+}
+
+.loader:nth-child(3){
+  animation-delay: 0.45s;
+}
+
+.loader:nth-child(4){
+  animation-delay: 0.6s;
+}
+
+.loader:nth-child(5){
+  animation-delay: 0.75s;
+}
+
+.loader:nth-child(6){
+  animation-delay: 0.9s;
+}
+
+@keyframes rotate{
+  30%{
+    transform: rotate(220deg);
+  }
+  40%{
+    transform: rotate(450deg);
+  }
+  75%{
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+  76%{
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.loader .dot{
+  top: 30px;
+  height: 7px;
+  width: 7px;
+  background: #FFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.container .text{
+  position: absolute;
+  color: #FFF;
+  bottom: -85px;
+  font-size: 25px;
+  font-weight: 400;
+  left: 45%;
+}
