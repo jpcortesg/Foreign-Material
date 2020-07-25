@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box  ;
+  font-family: 'Montserrat Alternates';
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: #212121;
+}
+
+.container{
+  background: #FFF;
+  width: 90%;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .form{
+  padding-top: 30px;
+}
+
+.container .form .form__row{
+  display: flex;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.form .form__row .form__group-input{
+  position: relative;
+  width: calc(50% - 50px);
+  margin: 0 20px;
+}
+
+.container .form .form__group-input input{
+  width: 80%;
+  margin-left: 10%;
+  font-size: 17px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.form__group-input input:focus{
+  border-color: #3498db !important;
+}
+
+.form__group-input input:focus ~ .form__label,
+.form__group-input input:valid ~ .form__label{
+  transform: translateY(-20px);
+  color: #3498db;
+  font-size: 16px;
+}
+
+.form__group-input .form__label{
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  text-align: center;
+  font-size: 18px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form__group-input .form__validation-status{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: none;
+}
+
+.form__group-input .form__input-error{
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+  text-align: justify;
+  display: none;
+}
+
+.form__group-input .form__input-error.active{
+  display: block;
+}
+
+.form__group-post{
+  display: block;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.form__group-post label {
+  margin: 0 20px;
+}
+
+.form__group-post .form__btn{
+  margin: 10px 0;
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  color: #FFF;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s linear;
+  text-transform: uppercase;
+}
+
+.form__group-post .form__btn:hover{
+  background-color: #FFF;
+  font-weight: 900;
+  color: #3498db;
+}
+
+.form__group-post.message{
+  height: 45px;
+  line-height: 45px;
+  background-color: #F66860;
+  padding: 0 15px;
+  border-radius: 6px;
+  display: none;
+}
+
+.form__group-post.message.active{
+  display: block;
+}
+
+.form__group-post .form__mesagge-success{
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #212121;
+  color: #119200;
+  font-size: 17px;
+  margin: auto;
+  border-radius: 6px;
+  transform: translateX(-200%);
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.form__group-post .form__mesagge-success.active{
+  transform: translateX(0);
+}
+
+.form__group-input.right  .form__validation-status{
+  color: #1ED12D;
+  display: block;
+}
+
+.form__group-input.correct input{
+  border-color: #1ED12D !important;
+}
+
+.form__group-input.correct  .form__validation-status{
+  color: #1ED12D;
+  display: block;
+}
+
+.form__group-input.incorrect input{
+  border-color: #BB2929 !important;
+}
+
+.form__group-input.incorrect  .form__validation-status{
+  color: #BB2929;
+  display: block;
+}
+
+@media screen and (max-width: 600px){
+
+  .container{
+    padding: 0;
+    width: 100%;
+  }
+
+  .container .form .form__row{
+    margin: 0;
+  }
+
+  .form .form__row .form__group-input{
+    width: 100%;
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form class="form" id="id">
+
+      <div class="form__row">
+
+        <!-- User -->
+        <div class="form__group-input correct" id="group__user">
+          <input autocomplete="off" required type="text" name="user" class="form__input" id="user">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="user" class="form__label">User</label>
+          <p class="form__input-error">the user must be from 4 to 16 digits and can only have numbers, letters and
+            underscore</p>
+        </div>
+
+        <!-- Name -->
+        <div class="form__group-input incorrect" id="group__name">
+          <input autocomplete="off" required type="text" name="name" class="form__input" id="name">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="name" class="form__label">Name</label>
+          <p class="form__input-error">the name must be from 4 to 16 digits and can only have numbers, letters and
+            underscore</p>
+        </div>
+
+      </div>
+
+      <div class="form__row">
+
+        <!-- Password -->
+        <div class="form__group-input" id="group__password">
+          <input autocomplete="off" required type="password" name="password" class="form__input" id="password">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="password" class="form__label">password</label>
+          <p class="form__input-error">Password must be 4-12 digits</p>
+        </div>
+
+        <!-- Repeat Password -->
+        <div class="form__group-input" id="group__password2">
+          <input autocomplete="off" required type="password" name="password2" class="form__input" id="password2">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="password2" class="form__label">Repeat Password</label>
+          <p class="form__input-error">Passwords must be the same</p>
+        </div>
+
+      </div>
+
+      <div class="form__row">
+
+        <!-- Telephone -->
+        <div class="form__group-input" id="troup__telephone">
+          <input autocomplete="off" required type="text" name="telephone" class="form__input" id="telephone">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="telephone" class="form__label">telephone</label>
+          <p class="form__input-error">the phone can only have numbers and 14 digits</p>
+        </div>
+
+        <!-- Email -->
+        <div class="form__group-input" id="group__email">
+          <input autocomplete="off" type="email" required name="email" class="form__input" id="email">
+          <i class="form__validation-status fas fa-times-circle"></i>
+          <label for="email" class="form__label">Email</label>
+          <p class="form__input-error">the email must be 4-16 digits long and can only have numbers, letters, hyphens
+            and underscores</p>
+        </div>
+
+      </div>
+
+
+      <!-- Terms and Conditions -->
+      <div class="form__group-post" id="group__terms">
+        <label class="form_label">
+          <input class="form__checkbox" type="checkbox" name="terms" id="terms">
+          I accept the terms and conditions
+        </label>
+      </div>
+
+      <!-- Message Error -->
+      <div class="form__group-post message" id="message">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error: </b>please fill in correctly</p>
+      </div>
+
+      <div class="form__group-post form__group-btn-submit">
+        <button class="form__btn" type="submit">Submit</button>
+        <p class="form__mesagge-success" id="nada2">Form sent successfully</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
