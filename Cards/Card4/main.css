@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+}
+
+body {
+  height: 100vh;
+  background: #EDEDED;
+  transition: 0.3s linear;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .image {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  background: #FFF;
+  overflow: hidden;
+}
+
+.container .image img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: 0.3s linear;
+}
+
+.container .image:hover img{
+  transform: scale(1.1);
+}
+
+.container .image .for_text {
+  position: absolute;
+  height: 250px;
+  width: 420px;
+  border: 1px solid #000;
+  border-radius: 20px 20px 0 0;
+  bottom: 0;
+  background: #b4b2b2a8;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: 0.3s linear;
+}
+
+.container .image:hover .for_text {
+  transform: translateY(0);
+}
+
+.container .image .for_text .top {
+  height: calc(25%);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .image .for_text .top h3 {
+  width: 70%;
+  padding-left: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.container .image .for_text .top h4 {
+  width: 30%;
+  padding-right: 10px;
+  color: #cecdcd;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.container .image .for_text .top p {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.container .image .for_text .size {
+  height: calc(25%);
+  padding-left: 5px;
+}
+
+.container .image .for_text .size h3 {
+  width: 100%;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.container .image .for_text .size h4{
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-weight: 300;
+  color: #FFF;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.container .image .for_text .size h4.active{
+  background: #cecdcd;
+}
+
+.container .image .for_text .size h4:nth-child(2) {
+  margin-left: 10px;
+}
+
+.container .image .for_text .size h4.select {
+  background: #a5a5a5 !important;
+  color: #FFF !important;
+}
+
+.container .image .for_text .color {
+  height: calc(25%);
+  padding: 5px;
+}
+
+.container .image .for_text .color h3 {
+  width: 100%;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.container .image .for_text .color div{
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.container .image .for_text .color div::before{
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 50%;
+  background: #000;
+}
+
+.container .image .for_text .color div:nth-child(2){
+  margin-left: 10px;
+  border-color: #E5E4E4 !important;
+}
+
+.container .image .for_text .color div:nth-child(2)::before{
+  background-color: #E5E4E4 !important;
+}
+
+.container .image .for_text .color div:nth-child(3){
+  border-color: #483b7c !important;
+}
+
+.container .image .for_text .color div:nth-child(3)::before{
+  background-color: #483b7c !important;
+}
+
+.container .image .for_text .color div:nth-child(4){
+  border-color: #2D2A2E !important;
+}
+
+.container .image .for_text .color div:nth-child(4)::before{
+  background-color: #2D2A2E !important;
+}
+
+.container .image .for_text .buttons{
+  height: calc(25%);
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .image .for_text .buttons button{
+  width: calc(50% - 70px);
+  height: 35px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #cecdcd;
+  transition: 0.3s linear;
+}
+
+.container .image .for_text .buttons button:hover{
+  transform: scale(1.05);
+}
