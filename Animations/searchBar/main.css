@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper, .search-data{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+  position: fixed;
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 1s linear;
+}
+
+.wrapper.active{
+  height: 4000px;
+  width: 4000px;
+}
+
+.search-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: 1s linear;
+}
+
+.search-btn span{
+  color: #FFF;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.search-data{
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+}
+
+.search-data input{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(100% - 50px);
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.search-data .line{
+  position: absolute;
+  height: 3px;
+  width: calc(100% - 50px);
+  background: #FFF;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 1s linear;
+}
+
+.search-data .line.active{
+  transform: scaleX(1);
+}
+
+.search-data label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 22px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-data input:valid ~ label{
+  opacity: 0;
+}
+
+.search-data span{
+  color: #FFF;
+  position: absolute;
+  width: 50px;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.close-btn{
+  position: absolute;
+  z-index: 99;
+  right: 25px;
+  top: 25px;
+  font-size: 25px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.search-data, .search-data span,
+.search-data label, .close-btn{
+  display: none;
+}
