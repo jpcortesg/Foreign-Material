@@ -7,13 +7,10 @@
 - 💎 copias de páginas, tarjetas, barras de navegación, animaciones, Forms etc.
 
 ## Channels of most codes
-- [<img align="left" alt="Código Fazt" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Código Fazt]
-- [<img align="left" alt="FalconMasters" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][FalconMasters]
-- [<img align="left" alt="CodingNepal" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][CodingNepal]
-- [<img align="left" alt="Online Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Online Tutorials]
-- [<img align="left" alt="codeSTACKr" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][codeSTACKr]
-- [<img align="left" alt="freeCodeCamp" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][freeCodeCamp]
-- [<img align="left" alt="Easy Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Easy Tutorials]
+- [<img align="left" alt="Código Fazt" width="26px" color="red" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Código Fazt]Código Fazt - [<img align="left" alt="FalconMasters" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][FalconMasters]CodingNepal
+- [<img align="left" alt="CodingNepal" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][CodingNepal]CodingNepal - [<img align="left" alt="Online Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Online Tutorials]Online Tutorials
+- [<img align="left" alt="codeSTACKr" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][codeSTACKr]codeSTACKr - [<img align="left" alt="freeCodeCamp" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][freeCodeCamp]freeCodeCamp
+- [<img align="left" alt="Easy Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Easy Tutorials]Easy Tutorials
 
 ### Connect with me:
 
