@@ -7,14 +7,15 @@
 - 💎 copias de páginas, tarjetas, barras de navegación, animaciones, Forms etc.
 
 ## Channels of most codes
-- [<img align="left" alt="Código Fazt" width="26px" color="red" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Código Fazt]Código Fazt - [<img align="left" alt="FalconMasters" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][FalconMasters]CodingNepal
-- [<img align="left" alt="CodingNepal" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][CodingNepal]CodingNepal - [<img align="left" alt="Online Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Online Tutorials]Online Tutorials
-- [<img align="left" alt="codeSTACKr" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][codeSTACKr]codeSTACKr - [<img align="left" alt="freeCodeCamp" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][freeCodeCamp]freeCodeCamp
-- [<img align="left" alt="Easy Tutorials" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][Easy Tutorials]Easy Tutorials
+- [Código Fazt][Código Fazt] - [FalconMasters][FalconMasters]
+- [CodingNepal][CodingNepal] - [Online Tutorials][Online Tutorials]
+- [codeSTACKr][codeSTACKr] - [freeCodeCamp][freeCodeCamp]
+- [Easy Tutorials][Easy Tutorials] - [DarkCode][DarkCode]
+- <img align="left" alt="Código Fazt" width="26px" color="#FF0000" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />
 
 ### Connect with me:
 
-[<img align="left" alt="" width="26px" color="red" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
 
 <br />
@@ -43,3 +44,4 @@
 [codeSTACKr]: https://www.youtube.com/channel/UCDCHcqyeQgJ-jVSd6VJkbCw
 [freeCodeCamp]: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
 [Easy Tutorials]: https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA
+[DarkCode]: https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw
