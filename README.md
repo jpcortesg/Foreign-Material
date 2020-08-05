@@ -11,11 +11,10 @@
 - [CodingNepal][CodingNepal] - [Online Tutorials][Online Tutorials]
 - [codeSTACKr][codeSTACKr] - [freeCodeCamp][freeCodeCamp]
 - [Easy Tutorials][Easy Tutorials] - [DarkCode][DarkCode]
-- <img align="left" alt="Código Fazt" width="26px" color="#FF0000" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />
 
 ### Connect with me:
 
-[<img align="left" alt="" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="" width="26px" color="#FF0000" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
 
 <br />
