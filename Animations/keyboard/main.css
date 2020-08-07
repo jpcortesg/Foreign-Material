@@ -50,7 +50,7 @@ body {
   text-transform: uppercase;
 }
 
-.wrapper .keys input:focus {
+.wrapper .keys input:active{
   color: #3498db;
   font-size: 19px;
   box-shadow: inset -3px -3px 7px #FFFFFF73,
@@ -60,4 +60,27 @@ body {
 
 .wrapper .keys input[value="space"] {
   width: 60%;
+}
+
+.wrapper .display{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.wrapper .display textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  resize: none;
+  color: #3498db;
+  font-size: 20px;
+  pointer-events: none;
+  border-radius: 10px 15px;
+  background: #DDE1E7;
+  box-shadow:inset -3px -3px 7px #FFFFFF73,
+    inset 2px 2px 7px rgba(94, 104, 121, 0288);
 }
