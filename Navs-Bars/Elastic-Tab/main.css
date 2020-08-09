@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+html, body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: rgb(226, 221, 255);
+}
+
+.wrapper{
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50px;
+  width: 55vw;
+  background-color: #FFF;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper nav{
+  display: flex;
+}
+
+.wrapper nav label{
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper nav label a{
+  position: relative;
+  z-index: -1;
+  color: #1D1F20;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+.wrapper nav #home:checked ~ label.home a{
+  color: #FFF;
+}
+
+.wrapper nav #inbox:checked ~ label.inbox a{
+  color: #FFF;
+}
+.wrapper nav #contact:checked ~ label.contact a{
+  color: #FFF;
+}
+.wrapper nav #heart:checked ~ label.heart a{
+  color: #FFF;
+}
+.wrapper nav #about:checked ~ label.about a{
+  color: #FFF;
+}
+
+.wrapper nav label a i{
+  font-size: 25px;
+  margin: 0 7px;
+}
+
+.wrapper nav .tab{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #05ABE0 0%, #8200F4 100%);
+  border-radius: 50px;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper nav #inbox:checked ~ .tab{
+  left: 20%;
+}
+
+.wrapper nav #contact:checked ~ .tab{
+  left: 40%;
+}
+
+.wrapper nav #heart:checked ~ .tab{
+  left: 60%;
+}
+
+.wrapper nav #about:checked ~ .tab{
+  left: 80%;
+}
+
+.wrapper nav input{
+  display: none;
+}
