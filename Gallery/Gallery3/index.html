@@ -1,0 +1,76 @@
+<!-- reference : https://www.youtube.com/watch?v=cVyhH3t49fs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Gallery 3</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="./Studio8 Img/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <img src="./Studio8 Img/menu.png" class="menu-icon" alt="">
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="text-box">
+          <h5>Our Products</h5>
+            <h1><b>Simplicity</b> <br>is the <b>ultimate</b> sophistication</h1>
+          
+            <img src="./Studio8 Img/circle.png" alt="" class="small-icon1">
+            <img src="./Studio8 Img/square.png" alt="" class="small-icon3">
+            <img src="./Studio8 Img/circle.png" alt="" class="small-icon2">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-box">
+          <img src="./Studio8 Img/pic2.jpg" id="gallery">
+
+          <ul>
+            <li class="btn">01</li>
+            <li class="btn active">02</li>
+            <li class="btn">03</li>
+            <li class="btn">04</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <img src="./Studio8 Img/circle.png" class="small-icon4">
+    <img src="./Studio8 Img/square.png" class="small-icon5">
+  </div>
+
+  <script>
+    const btn = document.getElementsByClassName('btn')
+    const gallery = document.getElementById('gallery')
+
+    let images = new Array(
+      './Studio8 Img/pic1.jpg',
+      './Studio8 Img/pic2.jpg',
+      './Studio8 Img/pic3.jpg',
+      './Studio8 Img/pic4.jpg'
+    )
+
+    for (let i = 0; i < btn.length; i++){
+      btn[i].onclick = function ()
+      {  
+        gallery.src = images[i]
+        let current = document.getElementsByClassName('active')
+        current[0].className = current[0].className.replace('active', '')
+        this.className += " active"
+      }
+    }
+  </script>
+</body>
+</html>
