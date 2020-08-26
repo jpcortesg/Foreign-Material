@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html, body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #664AFF;
+}
+
+.wrapper{
+  position: relative;
+  height: 60px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .btn-1{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #FFF;
+  color: #664AFF;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked ~ .btn-1{
+  height: 40px;
+  width: 100px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wrapper .field{
+  position: relative;
+  height: 100%;
+  width: 0%;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper #click{
+  display: none;
+}
+
+#click:checked ~ .field{
+  opacity: 1;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.wrapper .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 0 13px 0 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.wrapper .field .btn-2{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 100px;
+  background: #664AFF;
+  color: #FFF;
+  border-radius: 5px;
+  line-height: 40px;
+  cursor: pointer;
+}
