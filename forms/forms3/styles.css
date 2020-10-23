@@ -65,9 +65,9 @@ form .form-row .textarea{
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
 }
 
-.input-data input:focus ~ label, 
+.input-data input:focus ~ label,
 .textarea textarea:focus ~ label,
-.input-data input:valid ~ label, 
+.input-data input:valid ~ label,
 .textarea textarea:valid ~ label{
   transform: translateY(-20px);
   color: #3498db;
@@ -112,7 +112,7 @@ form .form-row .textarea{
   transition: transform 0.3s ease;
 }
 
-.input-data input:focus ~ .underline::before, .underline::after, 
+.input-data input:focus ~ .underline::before, .underline::after,
 .textarea textarea:focus ~ .underline::before, .underline::after,
 .input-data input:valid ~ .underline::before, .underline::after,
 .textarea textarea:valid ~ .underline::before, .underline::after{
