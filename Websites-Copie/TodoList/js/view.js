@@ -79,12 +79,12 @@ export default class View{
       <td>${todo.title}</td>
       <td>${todo.description}</td>
       <td class="text-center">
-        
+
       </td>
       <td class="text-right">
-        
+
       </td>
-    ` 
+    `
     const checkBox = document.createElement('input')
     checkBox.type = 'checkbox'
     checkBox.checked = todo.completed
